@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.xxm.androidutils.domain.Item;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.xxm.androidutils;
+package com.xxm.androidutils.domain;
 
 
 public class Item {
