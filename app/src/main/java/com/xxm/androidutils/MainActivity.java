@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private List<Item> itemList = new ArrayList<>();
 
     {
-        itemList.add(new Item("多点触摸", "",MultiActivity.class));
-        itemList.add(new Item("照片墙", "使用GridView展示照片墙",PhotoWallActivity.class));
+        itemList.add(new Item("多点触摸", "", MultiActivity.class));
+        itemList.add(new Item("照片墙", "使用GridView展示照片墙", PhotoWallActivity.class));
 
     }
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Item item = itemList.get(position);
-        Intent intent = new Intent(mContext,item.getClazz());
+        Intent intent = new Intent(mContext, item.getClazz());
         startActivity(intent);
     }
 

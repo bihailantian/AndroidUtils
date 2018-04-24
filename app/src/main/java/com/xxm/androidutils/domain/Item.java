@@ -7,7 +7,7 @@ public class Item {
     private String msg;
     private Class clazz;
 
-    public Item(String title, String msg,Class clazz) {
+    public Item(String title, String msg, Class clazz) {
         this.title = title;
         this.msg = msg;
         this.clazz = clazz;

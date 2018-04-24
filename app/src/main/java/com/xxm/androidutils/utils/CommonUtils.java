@@ -11,6 +11,7 @@ public class CommonUtils {
 
     /**
      * 把View对象挂载到窗体上面
+     *
      * @param address 内容
      * @param context 上下文
      */
@@ -26,7 +27,7 @@ public class CommonUtils {
         params.setTitle("Toast");
         TextView view = new TextView(context);
         view.setText(address);
-        WindowManager windowManager =  (WindowManager) context.getSystemService(context.WINDOW_SERVICE);
+        WindowManager windowManager = (WindowManager) context.getSystemService(context.WINDOW_SERVICE);
         windowManager.addView(view, params);
     }
 
