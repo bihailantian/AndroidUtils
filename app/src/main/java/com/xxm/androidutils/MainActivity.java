@@ -11,7 +11,10 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.xxm.androidutils.activity.AppUtilsActivity;
+import com.xxm.androidutils.activity.KeyBoardActivity;
 import com.xxm.androidutils.activity.MultiActivity;
+import com.xxm.androidutils.activity.NetActivity;
 import com.xxm.androidutils.domain.Item;
 import com.xxm.androidutils.photowall.PhotoWallActivity;
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private List<Item> itemList = new ArrayList<>();
 
     {
+        itemList.add(new Item("网络", "网络辅助类测试", NetActivity.class));
+        itemList.add(new Item("软件盘", "软件盘辅助类测试", KeyBoardActivity.class));
+        itemList.add(new Item("跟App相关的辅助类", "跟App相关的辅助类测试", AppUtilsActivity.class));
         itemList.add(new Item("多点触摸", "", MultiActivity.class));
         itemList.add(new Item("照片墙", "使用GridView展示照片墙", PhotoWallActivity.class));
 
