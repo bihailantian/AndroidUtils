@@ -23,6 +23,7 @@
         <activity android:name=".activity.AppUtilsActivity" />
         <activity android:name=".activity.KeyBoardActivity" />
         <activity android:name=".activity.NetActivity" />
+        <activity android:name=".activity.BadgeActivity"></activity>
     </application>
 
 </manifest>
