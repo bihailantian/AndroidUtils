@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidUtils</string>
+    <string name="one_more_exit">再按一次退出</string>
 </resources>
