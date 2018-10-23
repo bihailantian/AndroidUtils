@@ -50,8 +50,8 @@ public abstract class BaseActivity extends AppCompatActivity {
             mActivities.add(this);
         }
 
-        initView();
-        initData();
+        initView(savedInstanceState);
+        initData(savedInstanceState);
     }
 
 
@@ -180,14 +180,16 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 初始化数据
+     * @param savedInstanceState
      */
-    protected abstract void initData();
+    protected abstract void initData(Bundle savedInstanceState);
 
 
     /**
      * 初始化View
+     * @param savedInstanceState
      */
-    protected abstract void initView();
+    protected abstract void initView(Bundle savedInstanceState);
 
 
     @Override
